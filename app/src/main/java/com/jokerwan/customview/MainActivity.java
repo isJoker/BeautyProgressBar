@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         circleView = (PercentCircleView) findViewById(R.id.circle);
+//        circleView.setmProgress(80);
         handler.sendEmptyMessageDelayed(0,200);
     }
 }

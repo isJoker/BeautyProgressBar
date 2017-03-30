@@ -80,10 +80,12 @@ public class PercentCircleView extends View {
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
 
+        //得到视图的宽高取最小值给宽
         mWidth = getWidth();
         mHeight = getHeight();
         mWidth = Math.min(mWidth, mHeight);
 
+        //确定圆心，半径，外弧的宽度
         mCircleXY = mWidth / 2;
         mRadius = mCircleXY / 2;
         mCircleLineStrokeWidth = (int) (mRadius / 2);
@@ -117,10 +119,10 @@ public class PercentCircleView extends View {
 
     //对外提供设置进度的方法
     public void setmProgress(int  progress){
-        if(progress != 0) {
+        if(progress >= 0) {
             mProgress = progress;
         } else {
-            mMaxProgress = 25;
+            mProgress = 0;
         }
         this.invalidate();
     }
