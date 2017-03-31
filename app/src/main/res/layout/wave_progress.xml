@@ -4,9 +4,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.jokerwan.customview.widget.PercentCircleView
-        android:id="@+id/circle"
+    <com.jokerwan.customview.widget.WaveProgressView
+        android:id="@+id/wpv"
+        android:background="@drawable/bg"
         android:layout_centerInParent="true"
-        android:layout_width="200dp"
-        android:layout_height="200dp" />
+        android:layout_width="230dp"
+        android:layout_height="230dp" />
 </RelativeLayout>
