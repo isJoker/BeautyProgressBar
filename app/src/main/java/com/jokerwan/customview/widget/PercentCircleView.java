@@ -1,4 +1,4 @@
-package widget;
+package com.jokerwan.customview.widget;
 
 
 import android.content.Context;
