@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
     }
     private void initView() {
         wpv = (WaveProgressView) findViewById(R.id.wpv);
-//        wpv.setWaveColor("#ff00ff");
+        wpv.setWaveColor("#ff0000");
         handler.sendEmptyMessageDelayed(FLAG_ONE, 1000);
     }
 }
