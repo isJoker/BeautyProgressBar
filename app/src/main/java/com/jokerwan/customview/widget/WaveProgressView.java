@@ -135,7 +135,6 @@ public class WaveProgressView extends View {
         Paint paint = new Paint();
         paint.setAntiAlias(true);
         Bitmap bitmap = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
-
         Canvas canvas = new Canvas(bitmap);
 
         //剩余进度
